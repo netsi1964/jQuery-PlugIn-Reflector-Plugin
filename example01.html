@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>DW - Cycle</title>
+  <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery/jquery-1.5.min.js"></script>
+  <script type="text/javascript" src="jquery.cycle.min.js"></script>
+  <script type="text/javascript" src="jquery.plugInreflector.js"></script>
+  <link rel="Stylesheet" href="http://code.netsi.dk/blueprint/screen.css" media="screen" />
+  <link rel="Stylesheet" href="http://code.netsi.dk/blueprint/ie.css" media="screen" />
+  <link rel="Stylesheet" href="http://code.netsi.dk/blueprint/print.css" media="print" />
+  <script type="text/javascript">
+    jQuery(function () {
+      // Your start code here
+      jQuery('.gallery').cycle().plugInReflector({ output: '#reflection' });
+    });
+  </script>
+  <style type="text/css">
+    ul.gallery, ul.gallery li { width: 800px; font-family: Tahoma; }
+    #reflection {height: 400px; overflow: auto;}
+    body {padding-top: 20px; background-color: #aaa;}
+    .container {background-color: White;}
+    .gallery {float: left;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title prepend-1 span-22 append-1 last">
+      <h1>jquery.plugInReflector.js</h1><h2>Version 0.01</h2>
+      <p>This is a jQuery plug-in which can do some reflection on jQuerified elements. This can be very usefull when you try to explore possibilities of say image galleries.<br />plugInReflector will show you in a structured way the settings of such galleries. I will keep developing this plug-in.<br />
+      Download it from <a href="http://github.com/netsi1964/jQuery-PlugIn-Reflector-Plugin">jQuery-PlugIn-Reflector-Plugin</a>.</p>
+      <p>By Sten Hougaard<br />www: <a href="http://www.netsi.dk">www.netsi.dk</a><br />twitter: <a href="http://twitter.com/netsi1964">@netsi1964</a><br />blog: <a href="http://www.netsi.dk/wordpress">Blog</a>.</p>
+    </div>
+    <div class="prepend-1 span-22 append-1 last">
+      <div id="reflection">
+      </div>
+    </div>
+    <div class="prepend-1 span-22 append-1 last">
+    <br />
+    <h2>This a sample image gallery</h2>
+    <p>This jQuery gallery is based on <a href="http://jquery.malsup.com/cycle/" target="_blank">jQuery cycle</a></p>
+      <ul class="gallery">
+        <li id="gallery_item_1"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/06.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Deserunt nulla culpa officia occaecat excepteur." title="Deserunt nulla culpa officia occaecat excepteur." class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Deserunt nulla culpa officia occaecat excepteur. </h2>Ut in mollit adipisicing, elit irure excepteur dolor mollit in ut dolor et dolor irure dolor sunt. Consectetur voluptate dolor duis irure qui, ut fugiat veniam non dolore aliquip. Ipsum exercitation anim officia in cupidatat aliquip do et ut enim fugiat culpa consequat officia labore sit dolore.
+          </div>
+        </li>
+        <li id="gallery_item_2"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/05.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Non ut et, voluptate dolor veniam." title="Non ut et, voluptate dolor veniam." class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Non ut et, voluptate dolor veniam. </h2>Non proident est excepteur, labore aute dolore mollit ullamco est. Ad irure incididunt deserunt irure consequat lorem dolor eiusmod occaecat deserunt duis. Eiusmod est dolore mollit deserunt duis in.
+          </div>
+        </li>
+        <li id="gallery_item_3"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/04.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Dolore, et aute est sint, duis anim." title="Dolore, et aute est sint, duis anim." class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Dolore, et aute est sint, duis anim. </h2>Incididunt aliqua pariatur. Irure excepteur aliqua proident non exercitation aute. Do enim aliquip cupidatat, in dolore irure nisi qui elit consequat dolore commodo.
+          </div>
+        </li>
+        <li id="gallery_item_4"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/03.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Qui occaecat proident laboris cupidatat veniam lorem sed officia," title="Qui occaecat proident laboris cupidatat veniam lorem sed officia," class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Qui occaecat proident laboris cupidatat veniam lorem sed officia, </h2>Enim sed et aute ut lorem, elit sed quis voluptate duis ea consequat excepteur ipsum. Ea pariatur velit. Deserunt duis, cillum dolore labore.
+          </div>
+        </li>
+        <li id="gallery_item_5"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/02.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Voluptate incididunt deserunt sint aliquip" title="Voluptate incididunt deserunt sint aliquip" class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Voluptate incididunt deserunt sint aliquip </h2>Reprehenderit, non eiusmod pariatur culpa aliquip occaecat aliquip. Qui lorem ut in ut nulla excepteur fugiat, mollit et deserunt dolore irure sed. In consectetur laboris duis anim ad dolore. Qui amet consectetur nisi, sed excepteur in excepteur do aliqua.
+          </div>
+        </li>
+        <li id="gallery_item_6"><img src="http://sth.ecom.dev01.bleaudev.dk/admin/public/getimage.aspx?Image=/Files/billeder/Nyhedsbilleder/01.jpg&Format=jpg&Width=800&Height=450&Crop=5" alt="Enim eiusmod fugiat." title="Enim eiusmod fugiat." class="galleryThumb" />
+          <div class="caption-bottom">
+            <h2 class="h2">Enim eiusmod fugiat. </h2>Ut cillum ut eiusmod aliquip qui ea aute sit, proident dolore anim id in enim magna voluptate. Mollit veniam est ut labore est nostrud deserunt duis elit cupidatat nulla nisi dolore. Incididunt ipsum enim.
+          </div>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</body>
+</html>
